@@ -8,6 +8,18 @@ FROM craftcms/nginx:8.0
 
 LABEL "org.opencontainers.image.source"="https://github.com/SHoogland/craft-do-poc"
 
+LABEL "traefik.enable"="true"
+LABEL "traefik.http.routers.craft-shoogland-com-http.rule"="Host(`craft.shoogland.com`)"
+LABEL "traefik.http.routers.craft-shoogland-com-http.entrypoints"="web"
+LABEL "traefik.http.routers.craft-shoogland-com-http.middlewares"="www_redirect"
+LABEL "traefik.http.routers.craft-shoogland-com-https.rule"="Host(`craft.shoogland.com`)"
+LABEL "traefik.http.routers.craft-shoogland-com-https.entrypoints"="websecure"
+LABEL "traefik.http.routers.craft-shoogland-com-https.tls"="true"
+LABEL "traefik.http.routers.craft-shoogland-com-https.tls.certresolver"="myresolver"
+LABEL "traefik.http.middlewares.www_redirect.redirectregex.regex"="^https?:\/\/(craft\.)?shoogland\.com\/?(.*)$"
+LABEL "traefik.http.middlewares.www_redirect.redirectregex.replacement"="https://craft.shoogland.com/\${2}"
+LABEL "traefik.http.middlewares.www_redirect.redirectregex.permanent"="true"
+
 # switch to the root user to install mysql tools
 USER root
 RUN apk add --no-cache mysql-client
