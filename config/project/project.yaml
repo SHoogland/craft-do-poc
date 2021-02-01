@@ -1,0 +1,17 @@
+dateModified: 1612207555
+email:
+  fromEmail: login@bravoure.nl
+  fromName: 'Do test'
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: pro
+  live: true
+  name: 'Do test'
+  schemaVersion: 3.6.1
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
