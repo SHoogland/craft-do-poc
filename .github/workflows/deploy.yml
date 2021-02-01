@@ -1,0 +1,21 @@
+name: Upload Website
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Push to GitHub Packages
+      run: |
+        echo ${{ secrets.PAT }} | docker login ghcr.io -u shoogland --password-stdin
+        docker build . --tag ghcr.io/shoogland/craft-do-poc:$GITHUB_SHA --tag ghcr.io/shoogland/craft-do-poc:latest
+        docker push ghcr.io/shoogland/craft-do-poc:latest
+        docker push ghcr.io/shoogland/craft-do-poc:$GITHUB_SHA
+
