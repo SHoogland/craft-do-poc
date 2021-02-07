@@ -1,7 +1,8 @@
 {
   "require": {
-    "craftcms/cms": "^3.5.10",
-    "vlucas/phpdotenv": "^3.4.0"
+    "craftcms/cms": "^3.6",
+    "vlucas/phpdotenv": "^3",
+    "yiisoft/yii2-redis": "^2"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -15,7 +16,7 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "7.2.5"
+      "php": "8"
     }
   },
   "scripts": {
