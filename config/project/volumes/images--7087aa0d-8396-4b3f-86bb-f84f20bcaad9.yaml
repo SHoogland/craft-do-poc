@@ -39,7 +39,7 @@ settings:
   keyId: $DO_SPACES_KEY_ID
   region: $DO_SPACES_REGION
   secret: $DO_SPACES_SECRET
-  subfolder: $env/images
+  subfolder: images
 sortOrder: 1
 type: vaersaagod\dospaces\Volume
-url: $PRIMARY_SITE_URL/$env/images
+url: 'https://craft-bucket.ams3.cdn.digitaloceanspaces.com'
