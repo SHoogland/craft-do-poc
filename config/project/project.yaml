@@ -1,13 +1,28 @@
-dateModified: 1612207555
+dateModified: 1612689772
 email:
-  fromEmail: login@bravoure.nl
+  fromEmail: stephan@shoogland.com
   fromName: 'Do test'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    apiKey: $MAILGUN_API_KEY
+    domain: $MAILGUN_DOMAIN
+    endpoint: ''
+  transportType: craft\mailgun\MailgunAdapter
+plugins:
+  dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  mailgun:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true
   name: 'Do test'
-  schemaVersion: 3.6.1
+  schemaVersion: 3.5.13
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

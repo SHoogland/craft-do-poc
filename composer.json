@@ -1,6 +1,7 @@
 {
   "require": {
-    "craftcms/cms": "^3.6",
+    "craftcms/cms": "3.5.*",
+    "craftcms/mailgun": "^1.4",
     "vaersaagod/dospaces": "^1.1",
     "vlucas/phpdotenv": "^3",
     "yiisoft/yii2-redis": "^2"
@@ -17,7 +18,7 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "8"
+      "php": "7.4"
     }
   },
   "scripts": {

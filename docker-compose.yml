@@ -9,7 +9,7 @@ services:
     command: install
 
   backend:
-    image: craftcms/php-fpm:8.0
+    image: craftcms/php-fpm:7.4
     volumes:
       - .:/app
     deploy:
@@ -68,7 +68,7 @@ services:
       - console
 
   console:
-    image: craftcms/cli:8.0
+    image: craftcms/cli:7.4
     volumes:
       - .:/app
     env_file: .env
