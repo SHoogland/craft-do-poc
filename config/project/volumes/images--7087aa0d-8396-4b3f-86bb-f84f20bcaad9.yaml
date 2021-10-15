@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\TitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
         name: Content
@@ -41,5 +41,7 @@ settings:
   secret: $DO_SPACES_SECRET
   subfolder: images
 sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
 type: vaersaagod\dospaces\Volume
 url: 'https://craft-bucket.ams3.cdn.digitaloceanspaces.com'

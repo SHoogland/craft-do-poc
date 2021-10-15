@@ -1,4 +1,4 @@
-dateModified: 1612694888
+dockedateModified: 1634306759
 email:
   fromEmail: stephan@shoogland.com
   fromName: 'Do test'
@@ -9,6 +9,13 @@ email:
     domain: $MAILGUN_DOMAIN
     endpoint: ''
   transportType: craft\mailgun\MailgunAdapter
+meta:
+  __names__:
+    5d16a29d-e6e1-43bd-8b31-6e4a73efd9de: 'change_to_client_name (EN)' # change_to_client_name (EN)
+    021a60e1-804b-45da-ab4d-dda65ad7b897: 'Do test' # Do test
+    7087aa0d-8396-4b3f-86bb-f84f20bcaad9: Images # Images
+    78276139-d3fb-45fa-8d98-599b52dc12a6: 'Public Schema' # Public Schema
+    fcc9adaa-fa01-4794-988f-9f37a70fa7e2: Common # Common
 plugins:
   dospaces:
     edition: standard
@@ -22,7 +29,7 @@ system:
   edition: pro
   live: true
   name: 'Do test'
-  schemaVersion: 3.5.13
+  schemaVersion: 3.7.8
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

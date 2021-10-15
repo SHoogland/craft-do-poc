@@ -1,9 +1,9 @@
-baseUrl: $PRIMARY_SITE_URL
+baseUrl: 'http://@siteUrlClientNameEnglish'
 enabled: true
 handle: default
 hasUrls: true
-language: en-US
-name: 'Do test'
+language: en-GB
+name: 'change_to_client_name (EN)'
 primary: true
-siteGroup: 021a60e1-804b-45da-ab4d-dda65ad7b897
+siteGroup: 021a60e1-804b-45da-ab4d-dda65ad7b897 # Do test
 sortOrder: 1

@@ -32,6 +32,8 @@ return [
     // Whether administrative changes should be allowed
     'allowAdminChanges' => $isDev,
 
+    'useEmailAsUsername' => true,
+
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
 ];
