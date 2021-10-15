@@ -7,7 +7,6 @@
       "backend",
       "mariadb",
       "webserver",
-      "console",
       "redis"
     ],
     "remoteUser": "codespace",
