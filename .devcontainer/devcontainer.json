@@ -1,0 +1,19 @@
+{
+    "name": "Craft Codespace",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "workspace",
+    "runServices": [
+      "composer",
+      "backend",
+      "mariadb",
+      "webserver",
+      "console",
+      "redis"
+    ],
+    "remoteUser": "codespace",
+    "extensions": [
+      "GitHub.vscode-pull-request-github",
+      "ms-azuretools.vscode-docker"
+    ],
+    "workspaceFolder": "/"
+  }
