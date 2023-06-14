@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "3.7.*",
+    "craftcms/cms": "3.8.*",
     "craftcms/mailgun": "^1.4",
     "vaersaagod/dospaces": "^1.1",
     "vlucas/phpdotenv": "^3",
